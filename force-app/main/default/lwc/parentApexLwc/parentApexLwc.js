@@ -96,11 +96,11 @@ export default class ParentApexLwc extends LightningElement {
             // Check if you hit the ball!!
             if(this.ballLeft <= 16
                 && this.ballTop >= (this.playerTop-parseInt(this.playerHeight/2))
-                && this.ballTop <= (this.playerTop+parseInt(this.playerHeight/2))){
+                && this.ballTop <= (this.playerTop+parseInt(this.playerHeight))){
                 this.dx *= -1;
             }
 
-            // Checking Bounds
+            // Checking+parseInt(this.playerHeight) Bounds
             if(this.ballLeft < 5) {
                 this.ballLeft = this.initPos;
                 this.dx *= -1;

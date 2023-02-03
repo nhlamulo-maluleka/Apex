@@ -1,0 +1,7 @@
+.canvas{
+    position: relative;
+    background-color: teal;
+    border: 4px solid goldenrod;
+    border-radius: 6px;
+    z-index: 9;
+}
