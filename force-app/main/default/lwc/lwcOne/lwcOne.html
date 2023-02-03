@@ -1,0 +1,41 @@
+<template>
+    <h1>INTERACTING WITH APEX CLASSES FROM LWC</h1>
+    <div class="slds-m-around_large">
+        <lightning-button
+            label="Load Contacts"
+            value="Load Contacts"
+            onclick={loadContacts}></lightning-button>
+    </div>
+    <div class="slds-m-around_large slds-grid slds-wrap">
+        <template if:true={filled}>
+           <template for:each={result} for:item="c">
+                <!-- <h1 
+                    key={c.Id} 
+                    onclick={compData}
+                    data-id={c.Id}>{c.FirstName} {c.LastName}</h1> -->
+                <lightning-card 
+                    key={c.Id}
+                    icon-name="standard:contact" 
+                    title={c.FirstName}
+                    variant="narrow"
+                    class="slds-col slds-size_2-of-12 slds-m-bottom_xx-small"
+                    >
+                    <div class="slds-m-around_large">
+                        <h3>
+                            <lightning-formatted-name 
+                                first-name={c.FirstName}
+                                last-name={c.LastName}></lightning-formatted-name>
+                        </h3>
+                        <p>
+                            <lightning-formatted-email
+                                value={c.Email}></lightning-formatted-email>
+                        </p>
+                    </div>
+                </lightning-card>
+           </template>
+        </template>
+        <template if:false={filled}>
+           <h1>DATA IS NOT YET AVAILABLE!!</h1>
+        </template>
+    </div>
+</template>
