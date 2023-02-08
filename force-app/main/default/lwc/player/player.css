@@ -1,6 +1,8 @@
 .player{
     position: absolute;
-    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 3px;
     transition: all .2s;
 }
