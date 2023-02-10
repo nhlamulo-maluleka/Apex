@@ -2,8 +2,8 @@ import { LightningElement } from 'lwc';
 // import audio from '@salesforce/resourceUrl/audio';
 
 export default class Shooter extends LightningElement {
-    width = 800;
-    height = 500;
+    width = 650;
+    height = 450;
     offset = 8;
     playerheight = 55;
     playerwidth = 50;
