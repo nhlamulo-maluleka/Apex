@@ -100,7 +100,7 @@ export default class ParentApexLwc extends LightningElement {
                 this.dx *= -1;
             }
 
-            // Checking+parseInt(this.playerHeight) Bounds
+            // Checking Bounds
             if(this.ballLeft < 5) {
                 this.ballLeft = this.initPos;
                 this.dx *= -1;
