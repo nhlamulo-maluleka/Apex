@@ -1,0 +1,31 @@
+<template>
+    <div class="slds-m-around_xxx-large gameBody">
+        <div>
+            <div 
+                class="main-container"
+                data-id="container">
+                <div data-player="player" class="player"></div>
+                <div data-ball="ball" class="ball"></div>
+            </div>
+
+            <div class="btn-container">
+                <lightning-button
+                    class="btn"
+                    label="Up"
+                    onmousedown={moveUp}></lightning-button>
+                <lightning-button
+                    class="btn"
+                    label="Down"
+                    onmousedown={moveDown}></lightning-button>
+                <lightning-button
+                    class="btn"
+                    label="Start Game"
+                    onclick={startGame}></lightning-button>
+                <lightning-button
+                    class="btn"
+                    label="Stop Game"
+                    onclick={stopGame}></lightning-button>
+            </div>
+        </div>
+    </div>
+</template>

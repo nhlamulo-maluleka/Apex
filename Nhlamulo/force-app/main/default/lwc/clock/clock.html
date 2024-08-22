@@ -1,0 +1,31 @@
+<template>
+    <div class="container">
+        <div data-root="root" class="clock">
+            <div data-hours="hours" class="hours">
+                <div></div>
+            </div>
+            <div data-minutes="minutes" class="minutes">
+                <div></div>
+            </div>
+            <div data-seconds="seconds" class="seconds">
+                <div></div>
+            </div>
+        </div>
+        <div class="loadshedding">
+            <h1>Loadshedding Update</h1>
+            <template if:false={nextUpdate.stage}>
+                <h2>Loading updates...</h2>
+            </template>
+            <template if:true={nextUpdate.stage}>
+                <div class="loadsheddingUpdates">
+                    <label>
+                        {nextUpdate.stage}
+                    </label>
+                    <label>
+                        {nextUpdate.times}
+                    </label>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

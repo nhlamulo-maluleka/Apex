@@ -1,0 +1,36 @@
+.THIS.sent_container{
+    padding: .5rem;
+    width: 100%;
+    display: flex;
+    border-radius: 3px;
+}
+
+.THIS.received_container{
+    position: relative;
+    padding: .5rem;
+    border-radius: 3px;
+    display: flex;    
+    justify-content: right;
+}
+
+.THIS .sent,
+.THIS .received{
+    padding: .4rem;
+    font-size: 13pt;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 7px;
+    width: max-content;
+}
+
+.THIS .sent{
+    background-color: black;
+    margin-left: 0;
+}
+
+.THIS .received{
+    background-color: green;
+    color: black;
+    margin-right: .5rem;
+}

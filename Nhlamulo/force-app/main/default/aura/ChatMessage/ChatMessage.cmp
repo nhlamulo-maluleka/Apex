@@ -1,0 +1,26 @@
+<aura:component >
+    <aura:attribute 
+                    name="sent" 
+                    type="Boolean" 
+                    default="true" 
+                    description="This is the message that I have sent"/>
+    <aura:attribute 
+                    name="message" 
+                    type="String" 
+                    description="The text message"/>
+    
+    <aura:if isTrue="{!v.sent}">
+        <div class="sent_container">
+            <div class="sent">
+                {!v.message}
+            </div>
+        </div>
+        <aura:set attribute="else">
+            <div class="received_container">
+                <div class="received">
+                    {!v.message}
+                </div>
+            </div>
+        </aura:set>
+    </aura:if>
+</aura:component>

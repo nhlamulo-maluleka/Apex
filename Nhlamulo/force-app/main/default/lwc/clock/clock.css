@@ -1,0 +1,64 @@
+.container{
+    display: grid;
+    place-items: center;
+    grid-template-rows: 2;
+    background-color: rgb(8, 203, 238);
+    padding: .5rem;
+    border-radius: 1rem;
+}
+
+.clock{
+    position: relative;
+    width: 13rem;
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hours, .minutes, .seconds{
+    position: absolute;
+    width: 3px;
+    height: 12rem;
+    background-color: transparent;
+    border-radius: 90% 90% 0 0;
+    overflow: hidden;
+}
+
+.hours div,
+.minutes div,
+.seconds div{
+    position: relative;
+    width: 100%;
+    top: 0;
+    height: 6rem;
+    background-color: black;
+}
+
+.loadshedding{
+    position: relative;
+    padding: .5rem;
+    display: grid;
+    place-items: center;
+    grid-template-rows: 2;
+}
+
+.loadshedding h1{
+    color: red;
+    font-weight: bolder;
+}
+
+.loadsheddingUpdates{
+    padding: .5rem;
+}
+
+.loadsheddingUpdates label{
+    font-size: 17pt;
+    color: rgb(78, 45, 1);
+    margin: .3rem;
+    font-weight: bolder;
+}

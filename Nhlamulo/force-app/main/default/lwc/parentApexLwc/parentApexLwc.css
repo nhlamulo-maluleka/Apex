@@ -1,0 +1,41 @@
+.gameBody{
+    position: relative; 
+    display: flex; 
+    justify-content: center; 
+    margin: 2rem;
+}
+
+.main-container{
+    position: relative;
+    border-top: 1px solid rgb(255, 94, 0);;
+    border-bottom: 1px solid rgb(255, 94, 0);;
+    border-right: 10px solid rgb(255, 94, 0);;
+    border-left: 10px solid rgb(255, 94, 0);;
+    background: rgb(26, 2, 82);
+}
+
+.player{
+    position: absolute;
+    background-color: red;
+    border-radius: 10px;
+    left: 5px;
+    /* transition: all .5s; */
+}
+
+.ball{
+    position: absolute; 
+    width: 1.5rem; 
+    height: 1.5rem; 
+    background: gold; 
+    border-radius: 50%;
+    border: lightcoral;
+    /* transition: all .5s; */
+}
+
+.btn-container{
+    padding-top: .5rem;
+}
+
+.btn-container .btn{
+    margin-right: .5rem;
+}

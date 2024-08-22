@@ -1,0 +1,17 @@
+.container{
+    position: relative;
+    display: grid;
+    grid-template-rows: 2;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+}
+
+.keyboardInput{
+    display: flex;
+    width: 5px !important;
+    border: none !important;
+    outline: none !important;
+    appearance: none !important;
+    color: transparent;
+}
