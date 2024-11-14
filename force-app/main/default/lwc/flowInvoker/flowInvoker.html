@@ -1,0 +1,12 @@
+<template>
+    <section if:true={isClosedLost} role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+        <div class="slds-modal__container">
+            <lightning-modal-header label="My Test Heading"></lightning-modal-header>
+            <lightning-modal-body>
+                <lightning-flow 
+                    flow-api-name='Text_Display_Flow'
+                    flow-input-variables={flowInputVariables}></lightning-flow>
+            </lightning-modal-body>
+        </div>
+    </section>
+</template>
