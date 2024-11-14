@@ -1,0 +1,10 @@
+.THIS.yt_container {
+    position: relative;
+    padding: 1rem;
+}
+
+.THIS iframe {
+    position: relative;
+    top: .5rem;
+    width: 100%;
+}

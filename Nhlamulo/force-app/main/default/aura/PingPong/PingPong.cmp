@@ -1,0 +1,14 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="global" >
+    <aura:attribute name="title" type="string" default="PING PONG"/>
+    <aura:attribute name="xpos" type="Integer" default="10"/>
+    <aura:attribute name="ypos" type="Integer" default="15"/>
+    <aura:attribute name="position" type="string" default=""/>
+    
+    <div id="main">
+        <h1>{!v.title}</h1>
+        <div id="container" onkeypress="{!c.moveBlock}">
+            <div id="leftBlock" style="top: 15rem; left: 10px;"></div>
+            <div id="ball"></div>
+        </div>
+    </div>
+</aura:component>

@@ -1,0 +1,18 @@
+<template>
+    <div class="container">
+        <c-shooter-canvas 
+            width={width} 
+            height={height}
+            px={x}
+            py={y}
+            playerheight={playerheight}
+            playerwidth={playerwidth}></c-shooter-canvas>
+        <!-- Key Controller -->
+        <lightning-input 
+            class="keyboardInput" 
+            data-input="key" 
+            type="text"  
+            onkeydown={keyDown}
+            onfocus={inputFocus}></lightning-input>
+        </div>
+</template>

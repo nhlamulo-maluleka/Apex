@@ -1,0 +1,9 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="Id" type="String" default="a0N8d0000074PYoEAM"/>
+    <aura:attribute name="fields" type="String[]" default="['Preview__c','Health__c','Damage__c']"/>
+    <lightning:recordForm
+                          recordId="a0N8d0000074PYoEAM"
+                          objectApiName="Enemy__c"
+                          mode="readonly"
+                          fields="{!v.fields}"/>
+</aura:component>

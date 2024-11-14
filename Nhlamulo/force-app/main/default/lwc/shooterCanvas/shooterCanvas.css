@@ -1,0 +1,9 @@
+.canvas{
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    border: 1px solid rgb(63, 62, 61);
+    border-radius: 6px;
+    z-index: 9;
+}
